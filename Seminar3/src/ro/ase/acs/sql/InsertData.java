@@ -16,8 +16,8 @@ public class InsertData implements ro.ase.acs.interfacesSQL.InsertData {
         String sqlInsertWithParams = "INSERT INTO" + table + " VALUES VALUES (?,?,?,?)";
         PreparedStatement preparedStatement = connection.prepareStatement(sqlInsertWithParams);
         preparedStatement.setInt(1, 2);
-        preparedStatement.setString(2, "Ionescu Vasile");
-        preparedStatement.setString(3, "Brasov");
+        preparedStatement.setString(2, "Popescu Ion");
+        preparedStatement.setString(3, "Iasi");
         preparedStatement.setDouble(4, 4500);
         preparedStatement.executeUpdate();
 
